@@ -1,120 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Very edumecationeanilical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+
+        ul,
+        ol {
+            list-style-type: none;
+            /* No bullets or numbers */
+            padding: 0;
+            margin: 0;
         }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
+
+        button {
+            display: inline-block;
+            /* Makes the link behave like a button */
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
             text-decoration: none;
-            margin: 0 15px;
+            /* Removes underline */
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            /* Smooth hover effect */
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
         }
-        .content {
+
+        .menu {
+            background: #fff;
             padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        table {
+
+        .menu p {
+            margin: 20px 0;
+        }
+
+        .menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .menu a:hover {
+            background: #0056b3;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .menu .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        /* Basic styles for the tab system */
+
+        .tab-container {
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        table, th, td {
-            border: 1px solid #ddd;
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ccc;
         }
-        th, td {
+
+        .tab-button {
+            flex: 1;
             padding: 10px;
-            text-align: left;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        .tab-button:hover {
+            background-color: #ddd;
+        }
+
+        .tab-button.active {
+            background-color: #ccc;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .tab-content.active {
+            display: block;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Gaming glitches.com</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="content">
-        <section id="home">
-            <h2>Home</h2>
-            <p>I will be adding more soon</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Hello, I'm a 7th grader who is trying out coding for fun. I'm making this and another website called B.E.E.R.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="#" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Table Example</h2>
-            <table>
-                <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
-                </tr>
-                <tr>
-                    <td>Row 1, Cell 1</td>
-                    <td>Row 1, Cell 2</td>
-                    <td>Row 1, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Row 2, Cell 1</td>
-                    <td>Row 2, Cell 2</td>
-                    <td>Row 2, Cell 3</td>
-                </tr>
-            </table>
-        </section>
+    <h1>LineWize Bypasses</h1>
+    <sub>Last Update:</sub>
+    <sub id="commit-date">Loading...</sub>
+    <br>
+    <sub>Want to contribute? Go to this project's <a href="https://github.com/GoobisMoobis/ihatelinewize">repository on GitHub</a></sub>
+    <p>This is split into 3 categories.</p>
+    <ul>
+        <li><b>Proxies:</b> Visit ANY unblocked website, until the proxy itself gets blocked.</li>
+        <li><b>Intermediate:</b> More advanced methods of bypassing different things</li>
+        <li><b>ADVANCED:</b> These methods are the hardest, but usually the most rewarding, however might damage your Chromebook.</li>
+    </ul>
+    <h2>Bypasses:</h2>
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-button" onclick="openTab(event, 'Tab1')">Proxies</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab2')">Intermediate</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab3')">Advanced</button>
+        </div>
+        <div class="tab-content" id="Tab1">
+            <h3>A very simple list of different proxies that LineWize seems to be oblivious to</h3>
+            <h2>Links:</h2>
+            <sub>Make a comment on the <a href="https://github.com/GoobisMoobis/ihatelinewize/issues">issues page of the GitHub repository</a> if a link stops working</sub>
+            <br><br>
+            <ul>
+                <button id="https://for-da-boiz.vercel.app/" onclick="openDUMenu(this.id)">Doge Unblocker Link 1</button> <br>
+                <button id="https://4287613382.uncork.biz/" onclick="openISMenu(this.id)">Interstellar Unblocker Link 1</button>
+            </ul>
+        </div>
+        <div class="tab-content" id="Tab2">
+            <h3>Intermediate (Harder than using just a regular proxy, easier than the advanced tab)</h3>
+            <a class="button" href="/ihatelinewize/corkey.html">Corkey (Get rid of managed extensions)</a> <br>
+            <a class="button" href="/ihatelinewize/rigtools.html">RigTools (Extension/Devtools code execution)</a> <br>
+            <a class="button" href="/ihatelinewize/tempgoguardianbypass.html">Temporary Managed Extension Bypass <b>(PLEASE read the notes I added before using this)</b></a>
+        </div>
+        <div class="tab-content" id="Tab3">
+            <h3>Advanced (Only use if you know what you are doing)</h3>
+            <a class="button" href="/ihatelinewize/br1ck.html">Br1ck (Un-enrolls your Chromebook. It will no longer be managed by the school district.)</a>
+            <button id="OpenEXTR" onclick="openEXTRMenu()">Ext-remover (a site with EVERY SINGLE METHOD on this site & more)</button>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 My Web Page | All Rights Reserved</p>
-    </footer>
+
+
+    <div class="menu-overlay" id="DUmenuOverlay">
+        <div class="menu">
+            <button class="close" onclick="closeDUMenu()" style="color: red;">&times;</button>
+            <p>This is a Doge Unblocker proxy link.</p>
+            <p>Doge Unblocker proxies are very good proxies because they support tab cloaking and history cloaking</p>
+            <p>This means not only will the tab be hidden as a blank tab, but it will also NOT show in your history.</p>
+            <p>To do this, <b>go to the settings and enable ADVANCED about:blank cloaking.</b></p>
+            <sub>You can also explore some other settings while you're there!</sub>
+            <a id="DUmenuLink" href="#" target="_blank">Go to Website</a>
+        </div>
+    </div>
+    <div class="menu-overlay" id="ISmenuOverlay">
+        <div class="menu">
+            <button class="close" onclick="closeISMenu()" style="color: red;">&times;</button>
+            <p>This is an Interstellar proxy link.</p>
+            <p>By default, About:Blank cloaking is enabled.</p>
+            <p>This means not only will the tab be hidden as a blank tab, but it will also NOT show in your history.</p>
+            <p> There are also many other settings. In my opinion the settings are better than even Doge Unblocker.</p>
+            <p>I highly recommend checking <b>ALL</b> the settings out.</p>
+            <a id="ISmenuLink" href="#" target="_blank">Go to Website</a>
+        </div>
+    </div>
+    <div class="menu-overlay" id="EXTRmenuOverlay">
+        <div class="menu">
+            <button class="close" onclick="closeEXTRMenu()" style="color: red;">&times;</button>
+            <p>open the link "ext-remover.net" in one of the listed proxies"</p>
+        </div>
+    </div>
+
+    <script>
+        function openDUMenu(buttonId) {
+            const menuOverlay = document.getElementById('DUmenuOverlay');
+            const menuLink = document.getElementById('DUmenuLink');
+
+            menuLink.href = buttonId;
+            menuOverlay.style.display = 'flex';
+
+            // Close menu on Escape key press
+            document.addEventListener('keydown', function escListener(event) {
+                if (event.key === 'Escape') {
+                    closeDUMenu();
+                    document.removeEventListener('keydown', escListener);
+                }
+            });
+        }
+
+        function closeDUMenu() {
+            const menuOverlay = document.getElementById('DUmenuOverlay');
+            menuOverlay.style.display = 'none';
+        }
+        function openISMenu(buttonId) {
+            const menuOverlay = document.getElementById('ISmenuOverlay');
+            const menuLink = document.getElementById('ISmenuLink');
+
+            menuLink.href = buttonId;
+            menuOverlay.style.display = 'flex';
+
+            // Close menu on Escape key press
+            document.addEventListener('keydown', function escListener(event) {
+                if (event.key === 'Escape') {
+                    closeISMenu();
+                    document.removeEventListener('keydown', escListener);
+                }
+            });
+        }
+
+        function closeISMenu() {
+            const menuOverlay = document.getElementById('ISmenuOverlay');
+            menuOverlay.style.display = 'none';
+        }
+        function openEXTRMenu(buttonId) {
+            const menuOverlay = document.getElementById('EXTRmenuOverlay');
+            menuOverlay.style.display = 'flex';
+
+            // Close menu on Escape key press
+            document.addEventListener('keydown', function escListener(event) {
+                if (event.key === 'Escape') {
+                    closeISMenu();
+                    document.removeEventListener('keydown', escListener);
+                }
+            });
+        }
+
+        function closeEXTRMenu() {
+            const menuOverlay = document.getElementById('EXTRmenuOverlay');
+            menuOverlay.style.display = 'none';
+        }
+    </script>
+    <script>
+        const manualOverride = false; // Set to true to override the date manually.
+        const overrideDate = "September 2, 2025 at 3:10 PM"; // Manually set date.
+
+        async function getLastCommitDate(owner, repo) {
+            const apiUrl = `https://api.github.com/repos/${owner}/${repo}/commits`;
+
+            if (manualOverride) {
+                document.getElementById('commit-date').textContent = `Last Update: ${overrideDate}`;
+                return;
+            }
+
+            try {
+                const response = await fetch(apiUrl, {
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`GitHub API responded with status ${response.status}`);
+                }
+
+                const commits = await response.json();
+                const lastCommitDate = new Date(commits[0].commit.author.date);
+
+                const options = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                };
+
+                document.getElementById('commit-date').textContent = `Last Update: ${lastCommitDate.toLocaleDateString(undefined, options)}`;
+            } catch (error) {
+                document.getElementById('commit-date').textContent = `Error fetching commit date: ${error.message}`;
+            }
+        }
+
+        getLastCommitDate('GoobisMoobis', 'ihatelinewize');
+    </script>
+    <script>
+        function openTab(evt, tabName) {
+            // Get all elements with class="tab-content" and hide them
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            // Get all elements with class="tab-button" and remove the class "active"
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Set the default tab to open
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".tab-button").click();
+        });
+    </script>
 </body>
+
 </html>
